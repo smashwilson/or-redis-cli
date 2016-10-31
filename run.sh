@@ -1,3 +1,4 @@
 #!/bin/bash
 
-exec kubectl run --rm -it --image registry.getcarina.com/u/redis-cli:latest redis-cli
+exec kubectl run --rm -it \
+  --image quay.io/smashwilson/or-redis-cli:latest redis-cli
